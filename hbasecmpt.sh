@@ -1,0 +1,21 @@
+#!/bin/bash
+hbase shell <<EOF
+major_compact  'ATM_TRAN_INFO'
+major_compact  'CML_COUNTER_RECORD'
+major_compact  'CML_IMP_RECORDS'
+major_compact  'CML_LOAD_NOTES_RECORD'
+major_compact  'CML_NOTEFLOW_DETAIL_INFO'
+major_compact  'CML_NOTEFLOW_INFO'
+major_compact  'CML_SENT_INFOS'
+major_compact  'CML_STATISTIC_RECORD'
+major_compact  'CML_TASK_INFOS'
+major_compact  'IDX_COUNTER_DATE_ATM_OPERATOR'
+major_compact  'IDX_IMP_ID_NAME_DATE'
+major_compact  'IDX_LOAD_DATE_ATM_OPERATOR'
+major_compact  'IDX_NOTEFLOWDETAIL_DATE_CODE_OPERATOR'
+major_compact  'IDX_NOTEFLOW_DATE_NUM_STATE'
+major_compact  'IDX_SENT_SERIA_DATE'
+major_compact  'IDX_SENT_TRAN'
+major_compact  'IDX_TASK_START_ID_NUM_CODE'
+major_compact  'IDX_TRAN_TERM_CODE'
+EOF
